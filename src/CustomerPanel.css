@@ -1,0 +1,152 @@
+/* Reset some default styles for consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    background: #f7f7f7;
+}
+
+/* Panel container for the main content */
+.panel-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading styles */
+.panel-container h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.panel-container h3 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Events section styling */
+.events-section,
+.booked-events-section {
+    margin-top: 40px;
+}
+
+.events-section table,
+.booked-events-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.events-section th,
+.booked-events-section th {
+    background-color: #636a77; /* Blue for headers */
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.events-section td,
+.booked-events-section td {
+    background-color: #ffffff;
+    padding: 12px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+.events-section tr:nth-child(even),
+.booked-events-section tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.events-section tr:hover,
+.booked-events-section tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button styling for booking and cancelling tickets */
+button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: #0033a0;
+    color: white;
+}
+
+/* Specific button styles for booking/cancelling */
+.events-section button {
+    background-color: #4CAF50; /* Green for booking */
+    color: white;
+}
+
+.events-section button:disabled {
+    background-color: #999; /* Disabled button color */
+}
+
+.booked-events-section button {
+    background-color: #e74c3c; /* Red for cancel */
+    color: white;
+}
+
+.booked-events-section button:hover {
+    background-color: #c0392b;
+}
+
+/* Styling for the 'Booked' status in the event table */
+button:disabled {
+    cursor: not-allowed;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .panel-container {
+        padding: 20px;
+    }
+
+    .panel-container h2 {
+        font-size: 2em;
+    }
+
+    .panel-container h3 {
+        font-size: 1.5em;
+    }
+
+    .events-section table,
+    .booked-events-section table {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}

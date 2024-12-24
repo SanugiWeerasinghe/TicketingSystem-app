@@ -1,0 +1,373 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container for the whole vendor panel */
+.panel-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Configuration Form */
+.configuration-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.configuration-form h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: left;
+    color: black;
+}
+
+.configuration-form form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.configuration-form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: right; /* Align labels to the right for cleaner look */
+    color: #555;
+    align-self: center; /* Vertically aligns labels in the center of the grid row */
+}
+
+
+.configuration-form input {
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.configuration-form input:focus {
+    border-color: #0044cc;
+    outline: none;
+}
+
+.configuration-form input[type="number"] {
+    width: 250px;
+}
+
+.configuration-form input:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+/* Ticket Queue */
+.ticket-queue {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.ticket-queue h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-align: left;
+    color: black;
+}
+
+.ticket-queue table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.ticket-queue th, .ticket-queue td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+.ticket-queue th {
+    background-color: #0044cc;
+    color: white;
+}
+
+.ticket-queue tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.ticket-queue tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+.ticket-queue button {
+    padding: 8px 16px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9em;
+}
+
+.ticket-queue button:hover {
+    background-color: #e53935;
+}
+
+/* Control Panel */
+.control-panel {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start; /* Keep buttons in a row */
+    gap: 10px; /* Space between buttons */
+    flex-wrap: nowrap; /* Prevent buttons from wrapping */
+    align-items: center; /* Center buttons vertically */
+    position: sticky; /* Keep it fixed on the screen */
+    top: 20px; /* Space from top */
+    z-index: 100; /* Keep it above other content */
+}
+
+/* Ticket Queue */
+.ticket-queue {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    max-height: 500px; /* Limit the height */
+    overflow-y: auto; /* Enable scrolling for the ticket list */
+}
+
+.ticket-queue h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-align: left;
+    color: black;
+}
+
+.ticket-queue table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.ticket-queue th, .ticket-queue td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+.ticket-queue th {
+    background-color: #0044cc;
+    color: white;
+}
+
+.ticket-queue tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.ticket-queue tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+.ticket-queue button {
+    padding: 8px 16px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9em;
+}
+
+.ticket-queue button:hover {
+    background-color: #e53935;
+}
+
+/* Control Panel */
+.control-panel {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start; /* Keep buttons in a row */
+    gap: 10px; /* Space between buttons */
+    flex-wrap: nowrap; /* Prevent buttons from wrapping */
+    align-items: center; /* Center buttons vertically */
+    position: sticky; /* Keep it fixed on the screen */
+    top: 20px; /* Space from top */
+    z-index: 100; /* Keep it above other content */
+}
+
+/* Ticket Queue */
+.ticket-queue {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    max-height: 500px; /* Limit the height */
+    overflow-y: auto; /* Enable scrolling for the ticket list */
+}
+
+.ticket-queue h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-align: left;
+    color: black;
+}
+
+.ticket-queue table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.ticket-queue th, .ticket-queue td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+.ticket-queue th {
+    background-color: #0044cc;
+    color: white;
+}
+
+.ticket-queue tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.ticket-queue tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+.ticket-queue button {
+    padding: 8px 16px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9em;
+}
+
+.ticket-queue button:hover {
+    background-color: #e53935;
+}
+
+/* Control Panel Buttons (No Changes Needed) */
+.control-panel button {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    margin: 10px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px; /* Fixed width for buttons */
+}
+
+.control-panel button:hover {
+    background-color: #45a049;
+}
+
+.control-panel button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+/* System Status */
+.system-status {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.system-status h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-align: left;
+    color: black;
+}
+
+.system-status p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.system-status .running {
+    color: #388e3c;
+    font-weight: bold;
+}
+
+.system-status .paused {
+    color: #f44336;
+    font-weight: bold;
+}
+
+/* Button Styles (for general reuse) */
+button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .panel-container {
+        padding: 15px;
+    }
+
+    .configuration-form input,
+    .ticket-queue button,
+    .control-panel button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .control-panel button {
+        width: auto;
+    }
+}
